@@ -53,8 +53,25 @@ h1 {
     background-color: #e53935;
 }
 
+/* grid container for the 1st row for the categories */
+.grid-container-categories {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    width: 80%;
+    margin-top: 30px;
+}
+
+/* grid item for each category */
+.grid-item-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Grid container styles for 6x6 Jeopardy board */
-.grid-container {
+.grid-container-questions {
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* 6 columns */
     grid-template-rows: repeat(6, 1fr); /* 6 rows */
@@ -65,7 +82,7 @@ h1 {
 }
 
 /* Style for each grid item (question/answer) */
-.grid-item {
+.grid-item-questions {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,6 +96,6 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-.grid-item:hover {
+.grid-item-questions:hover {
     background-color: #5a6270; /* Hover effect */
 }
