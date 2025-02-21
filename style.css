@@ -1,5 +1,7 @@
 * {
-    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,14 +11,74 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #131720; /* Dark background for the game */
+    color: white;
 }
 
 h1 {
-    color: black;
+    font-size: 3rem;
     margin-bottom: 20px;
+    background-color: #131720; /* Dark background for the game */
 }
 
 #startButton {
     padding: 10px 20px;
     font-size: 16px;
+    background-color: red; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#startButton:hover {
+    background-color: #45a049;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green; /* Red for restart */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#restartButton:hover {
+    background-color: #e53935;
+}
+
+/* Grid container styles for 6x6 Jeopardy board */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    grid-template-rows: repeat(6, 1fr); /* 6 rows */
+    gap: 10px;
+    width: 80%; /* Controls the size of the grid */
+    height: 60%; /* Controls the size of the grid */
+    margin-top: 30px;
+}
+
+/* Style for each grid item (question/answer) */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3f51; /* Dark background color for items */
+    border-radius: 8px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.grid-item:hover {
+    background-color: #5a6270; /* Hover effect */
 }
