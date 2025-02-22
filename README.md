@@ -1,4 +1,4 @@
-# Jeopardy Game
+# [Jeopardy Game](https://ben-ortiz.github.io/JeopardyWebApp/)
 A Jeopardy game written in HTML, CSS, and Javascript using a public API but with a twist. The questions are random, theres no category, and it could be really hard or really easy.
 
 # What I learned
