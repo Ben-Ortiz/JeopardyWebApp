@@ -96,26 +96,26 @@ document.addEventListener("DOMContentLoaded", function () {
                 gridItem.innerText = `\$${(row + 1) * 200}`;
                 link.href = `questions.html?id=${questionId}&prize=${(row + 1) * 200}`
 
-                switch (col) {
-                    case 0:
-                        gridItem.style.backgroundColor = "green";
-                        break;
-                    case 1:
-                        gridItem.style.backgroundColor = "red";
-                        break;
-                    case 2:
-                        gridItem.style.backgroundColor = "yellow";
-                        break;
-                    case 3:
-                        gridItem.style.backgroundColor = "blue";
-                        break;
-                    case 4:
-                        gridItem.style.backgroundColor = "gray";
-                        break;
-                    case 5:
-                        gridItem.style.backgroundColor = "black";
-                        break;
-                }
+                // switch (col) {
+                //     case 0:
+                //         gridItem.style.backgroundColor = "green";
+                //         break;
+                //     case 1:
+                //         gridItem.style.backgroundColor = "red";
+                //         break;
+                //     case 2:
+                //         gridItem.style.backgroundColor = "yellow";
+                //         break;
+                //     case 3:
+                //         gridItem.style.backgroundColor = "blue";
+                //         break;
+                //     case 4:
+                //         gridItem.style.backgroundColor = "gray";
+                //         break;
+                //     case 5:
+                //         gridItem.style.backgroundColor = "black";
+                //         break;
+                // }
 
                 link.appendChild(gridItem);
                 gameGridQuestions.appendChild(link);

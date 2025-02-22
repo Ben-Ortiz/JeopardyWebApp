@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     const APILINK = "https://opentdb.com/api.php?amount=50&type=multiple";
     const url = new URL(location.href);
     const questionId = url.searchParams.get("id");
-    const prizeAmount = url.searchParams.get("prize");
+    const prizeAmount = url.searchParams.get("prize"); 
+    const questionContainer = document.getElementById("question-container");
 
     // Check if questionId exists
     // this block temporary
@@ -14,18 +15,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     //grab the responses from local storage
     const jeopardyQuestionsList = JSON.parse(localStorage.getItem("jeopardyQuestions"));
-
-    //sort the local storage by difficulty
-    const difficultyOrder = {
-        easy: 1,
-        medium: 2,
-        hard: 3
-    }
-    jeopardyQuestionsList.sort((a, b) => difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty]);
-
-    //put the sorted list back in local storage
-    localStorage.setItem("jeopardyQuestions", JSON.stringify(jeopardyQuestionsList));
-
 
     console.log("getting from local") //temporary
     console.log(jeopardyQuestionsList); //temporary
@@ -49,6 +38,30 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     console.log(element);
     console.log(element.question)
+
+    // fixes html to readable string
+    function decodeHTML(str) {
+        const doc = new DOMParser().parseFromString(str, 'text/html');
+        return doc.documentElement.textContent || doc.body.textContent;
+    }
+    
+    // make input field
+    questionContainer.innerText = decodeHTML(element.question);
+    const input = document.createElement("input");
+    input.setAttribute("id", "answerField")
+    input.type = "text";
+    input.placeholder = "Enter answer here";
+    
+    // make button
+    const submitAnswerButton = document.createElement("button");
+    submitAnswerButton.setAttribute("id", "submitAnswerButton")
+    submitAnswerButton.innerText = "Submit";
+
+    //add it to the questionContainer
+    questionContainer.appendChild(input);
+    questionContainer.appendChild(submitAnswerButton);
+
+
 
 
 });

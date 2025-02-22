@@ -100,3 +100,30 @@ h1 {
 .grid-item-questions:hover {
     background-color: #5a6270; /* Hover effect */
 }
+
+#question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 40px;
+}
+
+#answerField {
+    margin-top: 30px;
+    font-size: 18px;  /* Make text inside input box bigger */
+    width: 50%;      /* Adjust width as needed */
+    padding: 10px;    /* Add padding for better appearance */
+    height: 40px;     /* Adjust height */
+}
+
+#submitAnswerButton {
+    margin-top: 30px;
+    font-size: 18px;  /* Make text inside button bigger */
+    padding: 12px 20px;  /* Add padding for better appearance */
+    height: 50px;     /* Adjust height */
+    width: 50%; 
+    border-radius: 10px;
+}
