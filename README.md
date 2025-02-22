@@ -6,6 +6,7 @@ A Jeopardy game written in HTML, CSS, and Javascript using a public API, https:/
 - CSS: How to style HTML classes and ids and how grid and flex work
 - Javascript: How to style html and grab ids and classes to edit them and create eventlisteners, and local storage
 - API: How to use a public API to get resposnes from https://opentdb.com/
+- Github Pages: How to deploy on Github Pages
 
 # What I can improve on
 - HTML: better understanding of which tags to use
