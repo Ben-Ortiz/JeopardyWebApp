@@ -105,24 +105,27 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         if (formattedAnswer === formattedCorrectAnswer) {
             console.log("correct!");
-            const correctAnswer = document.createElement("div");
-            correctAnswer.style.color = "green";
-            correctAnswer.style.marginTop = "10px";
-            correctAnswer.setAttribute("id", "correct-answer");
-            correctAnswer.innerText = "Correct! The answer is " + element.correct_answer;
-            questionContainer.appendChild(correctAnswer);
+            const correctAnswerDiv = document.createElement("div");
+            correctAnswerDiv.style.color = "green";
+            correctAnswerDiv.style.marginTop = "10px";
+            correctAnswerDiv.setAttribute("id", "correct-answer");
+            correctAnswerDiv.innerText = "Correct! The answer is " + formattedCorrectAnswer;
+            questionContainer.appendChild(correctAnswerDiv);
+
         } else {
             console.log("incorrect");
-            console.log("the answer is: " + element.correct_answer);
-            const incorrectAnswer = document.createElement("div");
-            incorrectAnswer.style.color = "red";
-            incorrectAnswer.style.marginTop = "10px";
-            incorrectAnswer.setAttribute("id", "incorrect-answer");
-            incorrectAnswer.innerText = "Incorrect, the answer is: " + element.correct_answer;
-            questionContainer.appendChild(incorrectAnswer);
+            console.log("the answer is: " + formattedCorrectAnswer);
+            const incorrectAnswerDiv = document.createElement("div");
+            incorrectAnswerDiv.style.color = "red";
+            incorrectAnswerDiv.style.marginTop = "10px";
+            incorrectAnswerDiv.setAttribute("id", "incorrect-answer");
+            incorrectAnswerDiv.innerText = "Incorrect, the answer is: " + formattedCorrectAnswer;
+            questionContainer.appendChild(incorrectAnswerDiv);
         }
 
     }
+
+
 
 
 });
