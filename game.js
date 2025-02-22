@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const gameGridQuestions = document.getElementById("gameGridQuestions");
     const restartButton = document.getElementById("restartButton");
 
-    //helper function
+    //helper function, thats not used
     function incrementKey(map, key) {
         if (map.has(key)) {
             map.set(key, map.get(key) + 1);

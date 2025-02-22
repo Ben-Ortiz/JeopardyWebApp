@@ -14,10 +14,22 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     console.log("getting from local")
     console.log(jeopardyQuestionsList);
-
+    
+    /*
+    note: each element has the properties
+    category: "vehicles"
+    correct_answer: "1UZ-FE"
+    difficulty: "hard"
+    incorrect_answers: ["asbdf", "sadf", "asdf"]
+    question: "what engine is in the Lexus SC400?"
+    type: "multiple" 
+    */
+   
     for(let i = 0; i < jeopardyQuestionsList.length; i++) {
+        const element = jeopardyQuestionsList[i];
         if(i == questionId) {
-            console.log(jeopardyQuestionsList[i]);
+            console.log(element);
+            console.log(element.question);
         }
     }
 
