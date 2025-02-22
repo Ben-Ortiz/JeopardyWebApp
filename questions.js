@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             correctAnswerDiv.style.color = "green";
             correctAnswerDiv.style.marginTop = "10px";
             correctAnswerDiv.setAttribute("id", "correct-answer");
-            correctAnswerDiv.innerText = "Correct! The answer is " + formattedCorrectAnswer;
+            correctAnswerDiv.innerText = "Correct! The answer is " + element.correct_answer;
             questionContainer.appendChild(correctAnswerDiv);
 
         } else {
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             incorrectAnswerDiv.style.color = "red";
             incorrectAnswerDiv.style.marginTop = "10px";
             incorrectAnswerDiv.setAttribute("id", "incorrect-answer");
-            incorrectAnswerDiv.innerText = "Incorrect, the answer is: " + formattedCorrectAnswer;
+            incorrectAnswerDiv.innerText = "Incorrect, the answer is: " + element.correct_answer;
             questionContainer.appendChild(incorrectAnswerDiv);
         }
 
