@@ -13,3 +13,4 @@ A Jeopardy game written in HTML, CSS, and Javascript using a public API, https:/
 - CSS: how to style html better with CSS
 - Javascript: how to use best practices for javascript, and local storage
 - API: How to clean response from API better to 
+- Functionality: open new page when clicking demo link, organize questions better, mark answered questions
