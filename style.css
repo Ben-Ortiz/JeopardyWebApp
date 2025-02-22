@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #131720; /* Dark background for the game */
@@ -59,7 +59,7 @@ h1 {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
-    width: 80%;
+    width: 40%;
     margin-top: 30px;
 }
 
@@ -76,8 +76,8 @@ h1 {
     grid-template-columns: repeat(6, 1fr); /* 6 columns */
     grid-template-rows: repeat(6, 1fr); /* 6 rows */
     gap: 10px;
-    width: 80%; /* Controls the size of the grid */
-    height: 60%; /* Controls the size of the grid */
+    width: 40%; /* Controls the size of the grid */
+    height: 40%; /* Controls the size of the grid */
     margin-top: 30px;
 }
 

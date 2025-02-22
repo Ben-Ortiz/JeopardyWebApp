@@ -78,7 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 const gridItem = document.createElement("div");
                 gridItem.classList.add("grid-item-categories");
-                gridItem.innerText = `Category`;
+                gridItem.innerText = `Random`;
+                gridItem.style.fontSize = "25px";
 
                 gameGridCategories.appendChild(gridItem);
             }
