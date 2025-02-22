@@ -127,3 +127,12 @@ h1 {
     width: 50%; 
     border-radius: 10px;
 }
+
+#goBackButton {
+    margin-top: 30px;
+    font-size: 18px;  /* Make text inside button bigger */
+    padding: 12px 20px;  /* Add padding for better appearance */
+    height: 50px;     /* Adjust height */
+    width: 20%; 
+    border-radius: 10px;
+}
